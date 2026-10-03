@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://open.er-api.com https://api.frankfurter.dev https://api.gold-api.com; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Melsoft ERP" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <title>Melsoft ERP</title>
+    <style>
+      /* Açılış ekranı: JavaScript yüklenmeden önce de görünür; uygulama hazır olunca React kendiliğinden kaldırır (sabit süre yok). */
+      html, body { margin: 0; background: #f2f2f7; }
+      .splash { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; z-index: 2000; }
+      .splash img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25); }
+      .splash-name { font: 700 26px/1.2 -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, system-ui, sans-serif; letter-spacing: 0.02em; color: #1c1c1e; }
+      @media (prefers-color-scheme: dark) { html, body { background: #000; } .splash-name { color: #f2f2f7; } }
+    </style>
+    <script type="module" crossorigin src="./assets/index-CARNiBh1.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Cg7K7euW.css">
+  </head>
+  <body>
+    <div id="root">
+      <div class="splash" aria-label="Melsoft ERP yükleniyor"><img src="./icons/icon-192.png" alt="" /><div class="splash-name">Melsoft</div></div>
+    </div>
+    <noscript>Bu uygulama için JavaScript gereklidir.</noscript>
+  </body>
+</html>
